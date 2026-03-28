@@ -18,9 +18,9 @@ public class Program
         PointRef r1 = new PointRef( 1, 2);
         PointRef r2 = r1;
 
-        r2.X = 2;
+        r2.X = 2; // тут не зміниться, бо клон
         r2.Y = 1;
-        r1.Print();
+        r1.Print(); 
         r2.Print();
 
         BoxingTester boxingTester = new BoxingTester();
