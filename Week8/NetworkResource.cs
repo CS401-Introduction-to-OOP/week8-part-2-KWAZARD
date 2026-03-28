@@ -2,6 +2,10 @@
 
 public class NetworkResource : Resource, IDisposable
 {
+    public NetworkResource(string name, bool isOpen) : base(name, isOpen)
+    {
+    }
+
     public void Dispose()
     {
         Close();

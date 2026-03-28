@@ -4,6 +4,10 @@ namespace Week8;
 
 public class FileResouce : Resource, IDisposable
 {
+    public FileResouce(string name, bool isOpen) : base(name, isOpen)
+    {
+    }
+
     public void Dispose()
     {
         Close();
