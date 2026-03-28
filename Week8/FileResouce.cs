@@ -11,6 +11,7 @@ public class FileResouce : Resource, IDisposable
     public void Dispose()
     {
         Close();
+        Console.WriteLine("Disposed");
     }
 
     public override void Open()

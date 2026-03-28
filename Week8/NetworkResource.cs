@@ -9,6 +9,7 @@ public class NetworkResource : Resource, IDisposable
     public void Dispose()
     {
         Close();
+        Console.WriteLine("Disposed");
     }
 
     public override void Open()
